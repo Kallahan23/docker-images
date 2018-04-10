@@ -3,10 +3,10 @@ FROM ubuntu:latest
 
 # RUN add-apt-repository ppa:kivy-team/kivy
 RUN apt-get update && \
-    apt-get install -y python3 python3-kivy
+    apt-get install -y gcc g++
 
 RUN mkdir /project
 WORKDIR /project
 
 # Run app.py when the container launches
-CMD ["python3"]
+CMD ["/bin/bash"]
