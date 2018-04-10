@@ -1,2 +1,2 @@
-# docker-images
-Some random Dockerfiles
+# dockerfiles
+Some random Dockerfiles I use for various applications.
