@@ -1,12 +1,15 @@
-# Use an official Python runtime as a parent image
+# Ubuntu image with gcc and g++ installed
+# For compiling C and C++ programs
+#
+# Usage: docker run -it -v /Project/Path/:/project/:rw cpp-ubuntu
+
 FROM ubuntu:latest
 
-# RUN add-apt-repository ppa:kivy-team/kivy
 RUN apt-get update && \
     apt-get install -y gcc g++
 
 RUN mkdir /project
 WORKDIR /project
 
-# Run app.py when the container launches
+# Run bash when the container launches
 CMD ["/bin/bash"]
