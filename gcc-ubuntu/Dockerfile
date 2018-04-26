@@ -6,7 +6,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-    apt-get install -y gcc g++
+    apt-get install -y build-essential
 
 RUN mkdir /project
 WORKDIR /project
