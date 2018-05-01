@@ -1,7 +1,7 @@
 # Ubuntu image with gcc and g++ installed
 # For compiling C and C++ programs
 #
-# Usage: docker run -it -v /Project/Path/:/project/:rw gcc-ubuntu
+# Usage: docker run -it -v $(pwd):/project/:rw gcc-ubuntu
 
 FROM ubuntu:latest
 
