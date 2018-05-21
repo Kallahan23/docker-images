@@ -1,7 +1,7 @@
 # Ubuntu image with build-essential installed
 # For compiling C and C++ programs
 #
-# Usage: docker run -it -v $(pwd):/project/:rw ubuntu-build-essentials
+# Usage: docker run -it -v $(pwd):/project/:rw kallahan23/ubuntu-build-essentials
 
 FROM ubuntu:latest
 

@@ -1,11 +1,11 @@
 # Centos image with Development Tools installed
 # For compiling C and C++ programs
 #
-# Usage: docker run -it -v $(pwd):/project/:rw centos-dev-tools
+# Usage: docker run -it -v $(pwd):/project/:rw kallahan23/centos-dev-tools
 
 FROM centos:latest
 
-RUN yum update && \
+RUN yum update -y && \
     yum groupinstall -y 'Development Tools' && \
     yum clean all && \
     rm -rf /var/cache/yum
