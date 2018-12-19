@@ -1,4 +1,5 @@
 # Ubuntu image with python3-kivy installed
+# Author: Danny K
 
 FROM ubuntu:latest
 

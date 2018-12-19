@@ -1,5 +1,6 @@
 # Centos image with Development Tools installed
 # For compiling C and C++ programs
+# Author: Danny K
 #
 # Usage: docker run -it -v $(pwd):/project/:rw kallahan23/centos-dev-tools
 
